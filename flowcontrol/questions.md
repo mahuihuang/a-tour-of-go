@@ -63,13 +63,40 @@ if <condition> {
 
 ## switch 语句的结构？
 
+有 switch 语句后不为空
+
+```go
+switch <init statement>;<statement> {
+    case <value>:
+    default
+}
+```
+
+switch 后无语句
+
+```go
+switch {
+    case condition:
+    default:
+}
+```
+
 ## switch 语句的匹配顺序？
 
-## swich 与 if-else  的差别？
+至上而下，满足条件就结束匹配
+
+## switch 与 if-else 的差别？
+
+无特别的差异
 
 ## 如何使用 defer？ 何时触发 defer？
 
+在函数返回返回值后
+
 ## defer 都有哪些适用场景？
+
+回收资源、释放互斥锁
 
 ## 当一个函数内调用了多次 defer,应该按照什么顺序执行？
 
+先调用后执行
